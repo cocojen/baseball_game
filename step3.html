@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    #wholeData {
+        display: inline-block;
+    }
+    #scoreBoard1 {
+        margin-left: 100px;
+        display: inline-block;
+    }
+    #left {
+        display: inline-block;
+    }
+    #scoreBoard2 {
+        margin-left: 200px;
+        display: inline-block;
+    }
+    #whichRnd {
+        width: 250px;
+        display: block;
+        margin: 10px;
+    }
+</style>
+<body>
+    
+
+    <h1><신나는 야구 시합></h1>
+    <nav>
+            <ol>
+                    <div>                    
+                        <li onclick="inputData()"><a href="#">데이터 입력</a></li>
+                        <p id="teamA"></p>
+                        <p id="teamAdata"></p>
+                        <p id="teamB"></p>
+                        <p id="teamBdata"></p>
+                        <p id="saveData">
+                            <p id="aTeamData"></p>
+                            <p id="bTeamData"></p>
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <li onclick="printData()"><a href="#">데이터 출력</a></li>
+    
+                        <div>
+                            <p id="aName"></p>
+                            <p id="Alists"></p>  
+                        </div>
+                        <div>
+                            <p id="bName"></p>
+                            <p id="Blists"></p>  
+                        </div>
+                        
+
+                    </div>           
+                    <li onclick="playRound()"><a href="#">라운드 시작</a></li>           
+                    
+                    <p id='printResult'></p>      
+                    <p id='bottom'></p>        
+                    <input type="text" id='whichRnd' placeholder="건너뛰고 X회 후 투구보기 (enter로 이동)" 
+                    onkeypress="if(event.keyCode==13) {jumpRound();}"/> 
+            </ol>
+    </nav>
+
+    <script src="./step3.js"></script>
+</body>
+</html>
